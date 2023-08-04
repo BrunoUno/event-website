@@ -1,0 +1,305 @@
+:root {
+  --white: #fff;
+  --black: #000;
+
+  /* Primary colors*/
+  --primary-1: #2b8379;
+  --primary-2: #19a596;
+  --primary-3: #7fd1c7;
+  --primary-4: #7fd1c7;
+  --primary-5: #d0f3ef;
+
+  /* Neutral colors */
+  --neutral-1: #2c2c2c;
+  --neutral-2: #434343;
+  --neutral-3: #94868b;
+  --neutral-4: #d9cfd3;
+  --neutral-5: #f2ecee;
+
+  /* Accent-blue colors */
+  --accent-1: #970e3d;
+  --accent-2: #c43464;
+  --accent-3: #de7699;
+  --accent-4: #e6c3ce;
+  --accent-5: #fff2f7;
+}
+
+body {
+  background-color: var(--neutral-5);
+  margin: 0;
+  font-family: system-ui;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-container {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  margin-right: 30px;
+}
+
+.nav-create-event button,
+.nav-login a,
+.nav-logout a,
+.nav-register a,
+.nav-likes button {
+  background-color: var(--accent-3);
+  color: var(--white);
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.nav-create-event button:hover,
+.nav-login a:hover,
+.nav-logout a:hover,
+.nav-register a:hover,
+.nav-likes button:hover {
+  background-color: var(--accent-2);
+}
+
+.navbar-username img {
+  width: 80px;
+  height: 80px;
+}
+
+.onOff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  height: 50%;
+}
+
+.hero-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
+}
+
+.nav-brand {
+  margin-left: 30px;
+}
+
+.nav-brand img {
+  width: 120px;
+  height: 72px;
+}
+
+.events-container {
+  margin-top: 80px;
+}
+
+.events-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 35px;
+  column-gap: 35px;
+}
+
+.events-card {
+  width: 320px;
+  height: 420px;
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.events-image {
+  width: 320px;
+  height: 40%;
+  position: relative;
+}
+
+.events-image button {
+  position: absolute;
+  right: 20px;
+  top: 143px;
+}
+
+.events-image i {
+  border: 1px solid var(--neutral-4);
+  border-radius: 50%;
+  color: var(--accent-1);
+  font-size: 25px;
+  padding: 13px;
+  background-color: var(--white);
+}
+
+.events-details {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.events-details h3 {
+  margin-top: 30px;
+}
+
+.events-details p {
+  font-weight: 600;
+  color: var(--accent-2);
+}
+
+.events-image img {
+  width: 100%;
+  height: 168px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.login-enter-details {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-inner-block {
+  width: 60%;
+  height: 90%;
+}
+
+.login-inner-block img {
+  width: 120px;
+  height: 72px;
+}
+
+.login-display-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.login-display-image img {
+  height: 100vh;
+}
+
+.login-header h1 {
+  font-size: 3.5em;
+}
+
+.login-email input,
+.login-password input,
+.login-username input,
+.event-name input,
+.event-location input,
+.event-date input,
+.event-image input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.login-button input {
+  width: 100%;
+  height: 40px;
+  background-color: var(--accent-2);
+  color: var(--white);
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.redirect-link {
+  background-color: var(--accent-2);
+  padding: 7px 14px;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+  margin-top: 50px;
+  color: var(--white);
+}
+
+.redirect-link:hover {
+  background-color: var(--accent-1);
+}
+
+.likes-header {
+  height: 150px;
+}
+
+.likes-header h1 {
+  font-size: 3em;
+  margin-top: 50px;
+}
+
+.likes-content {
+  height: 200px;
+  background-color: var(--white);
+  width: 60%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.likes-card-image {
+  width: 40%;
+  height: 100%;
+}
+
+.likes-card-image img {
+  width: 100%;
+  height: 80%;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.likes-card-image i {
+  color: var(--accent-1);
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.likes-card-content {
+  margin-left: 20px;
+}
+.likes-card-date p,
+.likes-card-time p {
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+.likes-card-location p {
+  font-weight: 600;
+}
+
+.footer {
+  height: 400px;
+}
